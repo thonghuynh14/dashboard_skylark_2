@@ -1,0 +1,12 @@
+openpyxl
+requests
+streamlit
+streamlit_option_menu
+streamlit-option-menu
+pandas
+numpy
+num2words
+joblib
+scikit-learn
+plotly
+plotly.express
