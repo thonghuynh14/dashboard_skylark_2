@@ -12,7 +12,7 @@ st.set_page_config(page_title="Dashboard", layout="wide")
 @st.cache_data
 def load_data():
     # Load data
-    data = pd.read_excel('D:\Decisions_tree\web\data_visualize.xlsx')
+    data = pd.read_excel('web/data/data_visualize.xlsx')
     data['Doanh thu thực thu'] = data['Doanh thu thực thu'].replace(r'^\s*$', np.nan, regex=True)
     data['Doanh thu thực thu'] = pd.to_numeric(data['Doanh thu thực thu'], errors='coerce').fillna(0)
     bins = [3, 6, 15, 22, 38, 100]
